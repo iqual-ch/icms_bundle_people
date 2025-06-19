@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: people
+label: 'People (All languages)'
+type: 'canonical_entities:node'
+pattern: '/team/[node:title]'
+selection_criteria:
+  fce64f4f-5408-4400-a897-78ef4974b809:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fce64f4f-5408-4400-a897-78ef4974b809
+    context_mapping:
+      node: node
+    bundles:
+      icms_people: icms_people
+selection_logic: and
+weight: -10
