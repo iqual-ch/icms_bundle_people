@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_icms_people_firstname] [node:field_icms_people_lastname]'
+escape: false
+preserve_titles: false
+save: true
+chunk: 50
+dependencies:
+  config:
+    - node.type.icms_people
+new_content_behavior: 0

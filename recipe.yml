@@ -12,6 +12,7 @@ install:
   - graphql_core_schema
   - tagify_user_list
   - conditional_fields
+  - auto_entitylabel
 
 config:
   actions:
@@ -25,7 +26,7 @@ config:
         property: enabled_types.node
         values: [icms_people]
   # Add the content type to the editorial workflow
-    workflows.workflow.editorial:
+    workflows.workflow.icms_listing:
       addNodeTypes: [icms_people]
   # Add the content type to the default view mode
   # GraphQL Core Schema
@@ -36,3 +37,9 @@ config:
         schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
         schema_configuration.core_composable.bundles.paragraph.icms_layout_people.enabled: true
         schema_configuration.core_composable.fields.user.user_picture: user_picture
+        schema_configuration.core_composable.fields.node.field_icms_people_email: field_icms_people_email
+        schema_configuration.core_composable.fields.node.field_icms_people_firstname: field_icms_people_firstname
+        schema_configuration.core_composable.fields.node.field_icms_people_lastname: field_icms_people_lastname
+        schema_configuration.core_composable.fields.node.field_icms_people_link: field_icms_people_link
+        schema_configuration.core_composable.fields.node.field_icms_people_link_linkedin: field_icms_people_link_linkedin
+        schema_configuration.core_composable.fields.node.field_icms_people_phone: field_icms_people_phone

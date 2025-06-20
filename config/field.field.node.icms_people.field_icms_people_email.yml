@@ -1,0 +1,24 @@
+uuid: e00a9142-2991-4388-b7e6-6467defa9516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_people_email
+    - node.type.icms_people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.icms_people.field_icms_people_email
+field_name: field_icms_people_email
+entity_type: node
+bundle: icms_people
+label: E-mail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

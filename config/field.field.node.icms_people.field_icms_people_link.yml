@@ -1,0 +1,27 @@
+uuid: 68251e25-040f-4a40-98f9-7b35499411b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_people_link
+    - node.type.icms_people
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: true
+id: node.icms_people.field_icms_people_link
+field_name: field_icms_people_link
+entity_type: node
+bundle: icms_people
+label: 'Booking Link'
+description: 'Link to an external booking platform, if available.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

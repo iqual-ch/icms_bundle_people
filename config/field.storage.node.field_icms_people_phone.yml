@@ -1,0 +1,19 @@
+uuid: 3b52aad6-645d-47c4-a1c6-1f089762d81a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+id: node.field_icms_people_phone
+field_name: field_icms_people_phone
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

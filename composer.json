@@ -11,7 +11,8 @@
   },
   "require": {
     "iqual/blokkli_starterkit": "^1.0",
-    "drupal/conditional_fields": "^4.0@alpha"
+    "drupal/conditional_fields": "^4.0@alpha",
+    "drupal/auto_entitylabel": "^3.4"
   },
   "version": "1.x-dev"
 }

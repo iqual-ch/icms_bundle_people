@@ -1,0 +1,24 @@
+uuid: 2e1a3590-9b21-47fc-a428-3a19524f3e83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_people_firstname
+    - node.type.icms_people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.icms_people.field_icms_people_firstname
+field_name: field_icms_people_firstname
+entity_type: node
+bundle: icms_people
+label: 'First name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

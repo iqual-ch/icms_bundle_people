@@ -1,0 +1,29 @@
+uuid: 39c9999c-8d73-48ca-acd3-851906016218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_people_phone
+    - node.type.icms_people
+  module:
+    - telephone
+    - telephone_validation
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  telephone_validation:
+    format: 0
+    country: {  }
+id: node.icms_people.field_icms_people_phone
+field_name: field_icms_people_phone
+entity_type: node
+bundle: icms_people
+label: Phone
+description: 'A valid phone number including the international prefix.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

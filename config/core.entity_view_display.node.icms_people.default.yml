@@ -1,3 +1,4 @@
+uuid: 8962aa53-e84b-445c-a0c3-654c65081bcc
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,12 @@ dependencies:
     - field.field.node.icms_people.field_blokkli_comments
     - field.field.node.icms_people.field_icms_image
     - field.field.node.icms_people.field_icms_paragraphs
+    - field.field.node.icms_people.field_icms_people_email
+    - field.field.node.icms_people.field_icms_people_firstname
+    - field.field.node.icms_people.field_icms_people_lastname
+    - field.field.node.icms_people.field_icms_people_link
+    - field.field.node.icms_people.field_icms_people_link_linkedin
+    - field.field.node.icms_people.field_icms_people_phone
     - field.field.node.icms_people.field_icms_teaser_image
     - field.field.node.icms_people.field_icms_teaser_link_label
     - field.field.node.icms_people.field_icms_teaser_pretitle
@@ -18,9 +25,12 @@ dependencies:
   module:
     - comment
     - entity_reference_revisions
+    - link
     - metatag
     - text
     - user
+_core:
+  default_config_hash: QuzU4gY3_LDBR7rLt2qAvcG7NnoJkeFNMojkQJSWdp8
 id: node.icms_people.default
 targetEntityType: node
 bundle: icms_people
@@ -64,6 +74,60 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 107
+    region: content
+  field_icms_people_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_icms_people_firstname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_icms_people_lastname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_icms_people_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_icms_people_link_linkedin:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_icms_people_phone:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
     region: content
   field_icms_teaser_image:
     type: entity_reference_entity_view

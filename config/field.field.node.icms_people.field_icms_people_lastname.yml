@@ -1,0 +1,24 @@
+uuid: 9dbdd991-d438-47a7-838e-869ae5600de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_people_lastname
+    - node.type.icms_people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.icms_people.field_icms_people_lastname
+field_name: field_icms_people_lastname
+entity_type: node
+bundle: icms_people
+label: 'Last name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
