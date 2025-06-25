@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_listed_only
+    - node.type.icms_people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.icms_people.field_icms_listed_only
+field_name: field_icms_listed_only
+entity_type: node
+bundle: icms_people
+label: 'Only in lists'
+description: 'If this checkbox is ticked, the content will appear in listings only, <strong>without its own page</strong>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

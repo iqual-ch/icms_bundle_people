@@ -1,0 +1,5 @@
+label: 'Nur in Listen'
+description: 'Wenn diese Checkbox aktiviert ist, erscheint der Inhalt nur in Listen, <strong>ohne eigene Seite</strong>.'
+settings:
+  on_label: Ja
+  off_label: Nein
