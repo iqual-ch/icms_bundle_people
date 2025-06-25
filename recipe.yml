@@ -26,7 +26,7 @@ config:
         property: enabled_types.node
         values: [icms_people]
   # Add the content type to the editorial workflow
-    workflows.workflow.icms_listing:
+    workflows.workflow.editorial:
       addNodeTypes: [icms_people]
   # Add the content type to the default view mode
   # GraphQL Core Schema
@@ -36,7 +36,6 @@ config:
         schema_configuration.core_composable.bundles.node.icms_people.enabled: true
         schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
         schema_configuration.core_composable.bundles.paragraph.icms_layout_people.enabled: true
-        schema_configuration.core_composable.fields.user.user_picture: user_picture
         schema_configuration.core_composable.fields.node.field_icms_people_email: field_icms_people_email
         schema_configuration.core_composable.fields.node.field_icms_people_firstname: field_icms_people_firstname
         schema_configuration.core_composable.fields.node.field_icms_people_lastname: field_icms_people_lastname
