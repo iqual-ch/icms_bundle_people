@@ -42,3 +42,4 @@ config:
         schema_configuration.core_composable.fields.node.field_icms_people_link: field_icms_people_link
         schema_configuration.core_composable.fields.node.field_icms_people_link_linkedin: field_icms_people_link_linkedin
         schema_configuration.core_composable.fields.node.field_icms_people_phone: field_icms_people_phone
+        schema_configuration.core_composable.fields.node.field_icms_listed_only: field_icms_listed_only
