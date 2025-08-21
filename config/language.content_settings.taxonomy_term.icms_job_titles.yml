@@ -1,0 +1,16 @@
+uuid: 726c06b1-7696-47f4-ba0c-3f8ec3bf7d76
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icms_job_titles
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.icms_job_titles
+target_entity_type_id: taxonomy_term
+target_bundle: icms_job_titles
+default_langcode: site_default
+language_alterable: true

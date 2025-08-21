@@ -32,10 +32,11 @@ config:
   # GraphQL Core Schema
     graphql.graphql_servers.graphql:
       simple_config_update:
-        schema_configuration.core_composable.fields.paragraph.field_icms_topics: field_icms_topics
         schema_configuration.core_composable.bundles.node.icms_people.enabled: true
-        schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
         schema_configuration.core_composable.bundles.paragraph.icms_layout_people.enabled: true
+        schema_configuration.core_composable.bundles.taxonomy_term.icms_job_titles.enabled: true
+        schema_configuration.core_composable.fields.paragraph.field_icms_topics: field_icms_topics
+        schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
         schema_configuration.core_composable.fields.node.field_icms_people_email: field_icms_people_email
         schema_configuration.core_composable.fields.node.field_icms_people_firstname: field_icms_people_firstname
         schema_configuration.core_composable.fields.node.field_icms_people_lastname: field_icms_people_lastname
@@ -43,3 +44,4 @@ config:
         schema_configuration.core_composable.fields.node.field_icms_people_link_linkedin: field_icms_people_link_linkedin
         schema_configuration.core_composable.fields.node.field_icms_people_phone: field_icms_people_phone
         schema_configuration.core_composable.fields.node.field_icms_listed_only: field_icms_listed_only
+        schema_configuration.core_composable.fields.node.field_icms_people_job_title: field_icms_people_job_title

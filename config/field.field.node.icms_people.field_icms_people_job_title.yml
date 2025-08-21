@@ -1,0 +1,34 @@
+uuid: cd092f82-1a98-4a7b-bd44-363f056168ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_people_job_title
+    - node.type.icms_people
+    - taxonomy.vocabulary.icms_job_titles
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.icms_people.field_icms_people_job_title
+field_name: field_icms_people_job_title
+entity_type: node
+bundle: icms_people
+label: 'Job title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      icms_job_titles: icms_job_titles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

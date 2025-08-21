@@ -1,0 +1,40 @@
+uuid: 0e6d3554-f95a-4b69-954b-550037a22a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icms_job_titles
+id: taxonomy_term.icms_job_titles.default
+targetEntityType: taxonomy_term
+bundle: icms_job_titles
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  publish_on: true
+  revision_log_message: true
+  simple_sitemap: true
+  unpublish_on: true

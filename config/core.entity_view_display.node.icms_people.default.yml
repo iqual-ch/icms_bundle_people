@@ -1,3 +1,4 @@
+uuid: f59e671d-5f9f-430b-9a6d-a3c34aded5b2
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,7 @@ dependencies:
     - field.field.node.icms_people.field_icms_paragraphs
     - field.field.node.icms_people.field_icms_people_email
     - field.field.node.icms_people.field_icms_people_firstname
+    - field.field.node.icms_people.field_icms_people_job_title
     - field.field.node.icms_people.field_icms_people_lastname
     - field.field.node.icms_people.field_icms_people_link
     - field.field.node.icms_people.field_icms_people_link_linkedin
@@ -29,6 +31,8 @@ dependencies:
     - metatag
     - text
     - user
+_core:
+  default_config_hash: 4DyWjzpIxNmbAixxXI-jfkTkrGTkuu81hBgTWB88QCE
 id: node.icms_people.default
 targetEntityType: node
 bundle: icms_people
@@ -97,6 +101,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 111
+    region: content
+  field_icms_people_job_title:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 118
     region: content
   field_icms_people_lastname:
     type: string

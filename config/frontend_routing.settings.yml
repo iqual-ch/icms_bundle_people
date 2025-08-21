@@ -1,0 +1,9 @@
+keys:
+  search:
+    aliases:
+      en: '/suche'
+      fr: '/chercher'
+  static-page-example:
+    aliases:
+      en: '/statisch'
+      fr: '/statique'

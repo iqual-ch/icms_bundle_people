@@ -1,3 +1,4 @@
+uuid: 7c15e349-86da-43ab-b145-00d653e41547
 langcode: en
 status: true
 dependencies:
@@ -9,6 +10,7 @@ dependencies:
     - field.field.node.icms_people.field_icms_paragraphs
     - field.field.node.icms_people.field_icms_people_email
     - field.field.node.icms_people.field_icms_people_firstname
+    - field.field.node.icms_people.field_icms_people_job_title
     - field.field.node.icms_people.field_icms_people_lastname
     - field.field.node.icms_people.field_icms_people_link
     - field.field.node.icms_people.field_icms_people_link_linkedin
@@ -63,6 +65,7 @@ third_party_settings:
         - title
         - field_icms_people_firstname
         - field_icms_people_lastname
+        - field_icms_people_job_title
         - field_icms_people_email
         - field_icms_people_phone
         - field_icms_people_link
@@ -154,6 +157,8 @@ third_party_settings:
         description: ''
         required_fields: true
         weight: -5
+_core:
+  default_config_hash: vjwYnU9HAgWuWFdTCpYFfyEmEnIDBcEmOmxvfABaMuE
 id: node.icms_people.default
 targetEntityType: node
 bundle: icms_people
@@ -224,7 +229,7 @@ content:
     third_party_settings: {  }
   field_icms_people_email:
     type: email_default
-    weight: 4
+    weight: 5
     region: content
     settings:
       placeholder: max.mustermann@email.ch
@@ -242,6 +247,15 @@ content:
         maxlength_js: null
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
         maxlength_js_enforce: false
+  field_icms_people_job_title:
+    type: tagify_select_widget
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 50
+      placeholder: ''
+    third_party_settings: {  }
   field_icms_people_lastname:
     type: string_textfield
     weight: 3
@@ -256,7 +270,7 @@ content:
         maxlength_js_enforce: false
   field_icms_people_link:
     type: link_default
-    weight: 6
+    weight: 7
     region: content
     settings:
       placeholder_url: ''
@@ -264,7 +278,7 @@ content:
     third_party_settings: {  }
   field_icms_people_link_linkedin:
     type: link_default
-    weight: 7
+    weight: 8
     region: content
     settings:
       placeholder_url: 'https://www.linkedin.com/in/max-mustermann/'
@@ -276,7 +290,7 @@ content:
         maxlength_js_enforce: false
   field_icms_people_phone:
     type: telephone_default
-    weight: 5
+    weight: 6
     region: content
     settings:
       placeholder: '+41 79 123 45 67'
@@ -334,7 +348,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 50
       placeholder: ''
     third_party_settings: {  }
   field_metatags:
