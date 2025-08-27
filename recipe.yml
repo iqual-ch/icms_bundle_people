@@ -13,6 +13,7 @@ install:
   - tagify_user_list
   - conditional_fields
   - auto_entitylabel
+  - schema_person
 
 config:
   actions:
