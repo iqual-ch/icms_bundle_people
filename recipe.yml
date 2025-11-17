@@ -14,6 +14,8 @@ install:
   - conditional_fields
   - auto_entitylabel
   - schema_person
+  # Bundle Logic
+  - icms_bundle_people_logic
 
 config:
   actions:
