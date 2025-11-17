@@ -17,7 +17,9 @@ label: 'Only in lists'
 description: 'If this checkbox is ticked, the content will appear in listings only, <strong>without its own page</strong>.'
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'Yes'
