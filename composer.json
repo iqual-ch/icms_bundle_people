@@ -22,5 +22,5 @@
         "drupal/conditional_fields": "^4.0@alpha",
         "drupal/auto_entitylabel": "^3.4"
     },
-    "version": "1.x-dev"
+    "version": "1.4.1"
 }
