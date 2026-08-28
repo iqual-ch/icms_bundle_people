@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.icms_layout_people.field_icms_listing_type
     - field.field.paragraph.icms_layout_people.field_icms_pretitle
+    - field.field.paragraph.icms_layout_people.field_icms_sorting
     - field.field.paragraph.icms_layout_people.field_icms_text
     - field.field.paragraph.icms_layout_people.field_icms_title
     - field.field.paragraph.icms_layout_people.field_icms_title_style
@@ -58,6 +59,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_icms_sorting:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_icms_text:
     type: text_textarea

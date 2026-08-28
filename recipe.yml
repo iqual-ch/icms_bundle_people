@@ -44,6 +44,7 @@ config:
         schema_configuration.core_composable.bundles.taxonomy_term.icms_job_titles.enabled: true
         schema_configuration.core_composable.fields.paragraph.field_icms_topics: field_icms_topics
         schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
+        schema_configuration.core_composable.fields.paragraph.field_icms_sorting: field_icms_sorting
         schema_configuration.core_composable.fields.node.field_icms_people_email: field_icms_people_email
         schema_configuration.core_composable.fields.node.field_icms_people_firstname: field_icms_people_firstname
         schema_configuration.core_composable.fields.node.field_icms_people_lastname: field_icms_people_lastname
@@ -52,3 +53,14 @@ config:
         schema_configuration.core_composable.fields.node.field_icms_people_phone: field_icms_people_phone
         schema_configuration.core_composable.fields.node.field_icms_listed_only: field_icms_listed_only
         schema_configuration.core_composable.fields.node.field_icms_people_job_title: field_icms_people_job_title
+  # Index the last name so listings can sort alphabetically (ICMS-584)
+    search_api.index.content_search:
+      simple_config_update:
+        field_settings.lastname:
+          label: 'Last name'
+          datasource_id: 'entity:node'
+          property_path: field_icms_people_lastname
+          type: string
+          dependencies:
+            config:
+              - field.storage.node.field_icms_people_lastname
